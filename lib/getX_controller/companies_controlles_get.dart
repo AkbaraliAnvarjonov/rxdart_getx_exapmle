@@ -7,7 +7,7 @@ class GetxCompaniesController extends GetxController {
   GetxCompaniesController() {
     fetchCompanies();
   }
-  final RxBool isLoading = true.obs;
+  final RxBool isLoading = true.obs; 
   final Rx<MyResponse> companies = MyResponse(error: "").obs;
 
   fetchCompanies() async {
@@ -15,11 +15,9 @@ class GetxCompaniesController extends GetxController {
     MyResponse myResponse = await companyRepos.getAllCars();
 
     if (myResponse.error.isEmpty) {
-      print("1 getx");
       companies.value.data = myResponse.data;
     }
     if (myResponse.error.isNotEmpty) {
-      print("2 getx");
       companies.value.error = myResponse.error;
     }
     isLoading.value = false;

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rxdart_getx/screens/getx_company_screen.dart';
 import 'package:rxdart_getx/screens/home_screen/home_screen.dart';
 
 void main() {

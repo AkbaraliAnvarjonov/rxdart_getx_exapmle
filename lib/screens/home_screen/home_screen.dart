@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 import 'package:rxdart_getx/screens/getx_company_screen.dart';
 import 'package:rxdart_getx/screens/rx_company_screen.dart';
